@@ -58,15 +58,44 @@
       <p class="note" data-en="These are general focus areas for the website. Add verified details and photos of actual programmes before publishing." data-bn="ওয়েবসাইটের জন্য এগুলি সাধারণ লক্ষ্য হিসেবে দেওয়া হয়েছে। প্রকাশের আগে প্রকৃত কার্যক্রমের যাচাই করা তথ্য ও ছবি যোগ করুন।">These are general focus areas for the website. Add verified details and photos of actual programmes before publishing.</p>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="section" id="gallery">
-      <div class="section-heading">
-        <p class="eyebrow" data-en="Our Gallery" data-bn="আমাদের গ্যালারি">Our Gallery</p>
-        <h2 data-en="Moments from our community" data-bn="আমাদের কার্যক্রমের মুহূর্ত">Moments from our community</h2>
-        <p data-en="Photos and memories of our work will be shared here." data-bn="আমাদের কাজের ছবি ও স্মৃতি এখানে শেয়ার করা হবে।">Photos and memories of our work will be shared here.</p>
-      </div>
-      <p data-en="Gallery photos coming soon." data-bn="গ্যালারির ছবি শীঘ্রই যোগ করা হবে।">Gallery photos coming soon.</p>
-    </section>
+   <!-- Gallery Section -->
+<section class="section" id="gallery">
+  <div class="section-heading">
+    <p class="eyebrow" data-en="Our Gallery" data-bn="আমাদের গ্যালারি">Our Gallery</p>
+    <h2 data-en="Moments from our community" data-bn="আমাদের কার্যক্রমের মুহূর্ত">Moments from our community</h2>
+    <p data-en="Photos of our activities and community service" data-bn="আমাদের কার্যক্রম ও সমাজসেবার ছবি">Photos of our activities and community service</p>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="assets/Blood%20donation%20camp-jpg.jpg" alt="Blood Donation Camp">
+    <img src="assets/Donation-%20program-jpg.jpg" alt="Donation Program">
+    <img src="assets/Donation-01%20%20program-jpg.jpg" alt="Donation Program Activity">
+    <img src="assets/Volunteer-team%2Cjpg.jpg" alt="Volunteer Team">
+  </div>
+</section>
+
+<style>
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
     <!-- Donate Section -->
     <section class="section" id="donate">
